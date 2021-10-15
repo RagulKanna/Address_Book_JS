@@ -157,14 +157,22 @@ class Contact {
     }
 
     toString() {
-        return "First Name : " + this.first_Name + ",\nLast Name : " + this.last_Name + ",\nCity : " + this.city + ",\nState : " + this.state + ",\nZip : " + this.zip + ",\nPhone Number : " + this.phone_Number + ",\nEmail : " + this.email;
+        return "First Name : " + this.first_Name + ",\nLast Name : " + this.last_Name + ",\nAddress : " + this.address + ",\nCity : " + this.city + ",\nState : " + this.state + ",\nZip : " + this.zip + ",\nPhone Number : " + this.phone_Number + ",\nEmail : " + this.email;
     }
 }
 
 console.log("Welcome to address book program....");
 try {
-    let new_contact = new Contact("ragul", "kanna", "Sankari", "Salem", "TamilNadu", "637 301", "91 9500744651", "ragulragi619@gmail.com");
-    console.log(new_contact.toString());
+    let new_contact1 = new Contact("Ragul", "Kanna", "Sankari", "Salem", "TamilNadu", "637 301", "91 9500744651", "ragulragi619@gmail.com");
+    let new_contact2 = new Contact("Gokul", "Aadhi", "Sankari", "Salem", "TamilNadu", "637 301", "91 8675468733", "gokulaadhi@gmail.com");
+    
+    var addressBookList = new Array();
+    addressBookList.push(new_contact1);
+    addressBookList.push(new_contact2);
+
+    console.log(addressBookList[0].toString());
+    console.log(addressBookList[1].toString());
 } catch (e) {
     console.log(e);
 }
+
