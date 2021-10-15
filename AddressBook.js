@@ -80,4 +80,5 @@ class Contact {
 }
 
 let new_contact = new Contact("Ragul", "Kanna", "Sankari", "Salem", "TamilNadu",637301,9500744651,"ragulragi619@gmail.com");
+console.log("Welcome to address book program....")
 console.log(new_contact.toString());
